@@ -1,0 +1,73 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
+
+*{
+   box-sizing: border-box;
+  }
+
+:root{
+  --primarycol: red;
+  --secondarycol: pink;
+  --tertiarycol: yellow;
+  --headingfont: "DM Sans", sans-serif, cursive, system-ui;
+  --bodyfont:"DM Sans", sans-serif;
+}
+
+body{
+      font-family: var(--bodyfont), sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.5;
+   }
+
+.title{
+   background-color: beige;
+   border: 2px solid #A96928;
+   margin-bottom: 1.5rem;
+   margin-left: auto;
+   margin-right: auto;
+   width: 70vw;
+}
+/* adds background colour, visible border, padding, and margins to .title*/
+
+.section{
+   background-color: antiquewhite;
+   border:1px solid #150D05;
+   margin: 1rem;
+   padding: 1rem;
+}
+/* resulting margins between h2 sections collapse into 1rem, not 1+1rem margins. */
+
+h1{
+   color: #150D05;
+   text-align: center;
+   font-family: var(--headingfont);
+   font-size: 3rem;
+   line-height: 1.2;
+   text-wrap: balance;
+}
+
+h2{
+   color: #A96928;
+   font-size: 2rem;
+   line-height: 1.2;
+   text-wrap: balance;
+}
+
+.intro{
+   font-size: 18px;
+}
+
+#summit{
+   color: #150D05;
+}
+
+p{
+   line-height: 32px;
+   color:#3A240E;
+}
+
+img{
+   aspect-ratio: auto;
+   width: 100%;
+}
+/* sets fized aspect ratio for the image and sets width to 100 percent of its container, the container being the viewport */
