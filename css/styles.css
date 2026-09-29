@@ -6,31 +6,32 @@
   }
 
 /* 4-step HSL colour palette
-hsl(67 14.7% 20%)
-hsl(67 14.7% 35%)
-hsl(67 14.7% 50%)
-hsl(67 14.7% 65%)
+hsl(67 14.7% 20%) darkest
+hsl(67 14.7% 35%) lighter
+hsl(67 14.7% 50%) even lighter
+hsl(67 14.7% 65%) lightest
 
 4-step oklch colour palette 
-oklch(0.209 0.023 111)
-oklch(0.343 0.023 111)
-oklch(0.500 0.023 111)
-oklch(0.630 0.023 111) */
+oklch(0.209 0.023 111) darkest
+oklch(0.343 0.023 111) lighter
+oklch(0.500 0.023 111) even lighter
+oklch(0.630 0.023 111) lightest */
 
 :root{
   --primarycol: oklch(0.209 0.023 111);
   --secondarycol: oklch(0.343 0.023 111);
   --tertiarycol: oklch(0.400 0.023 111);
   --backgroundcol: oklch(0.950 0.023 111);
-  --headingfont: "DM Sans", sans-serif, cursive, system-ui;
-  --bodyfont:"DM Sans", sans-serif;
+  --headingfont: "DM Sans", system-ui, sans-serif;
+  --bodyfont:"DM Sans", system-ui, sans-serif;
 }
 
 body{
-      font-family: var(--bodyfont), sans-serif;
+      font-family: var(--bodyfont);
       font-size: 1.1rem;
       line-height: 1.5;
    }
+/* suitable contrast ratio against background colour */
 
 .title{
    background-color: var(--backgroundcol);
